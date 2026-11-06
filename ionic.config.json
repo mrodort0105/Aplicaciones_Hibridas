@@ -1,0 +1,7 @@
+{
+  "name": "pokeshop-Miguel",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

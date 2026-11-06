@@ -1,0 +1,10 @@
+<ion-card *ngIf="carta">
+  <img [src]="carta.imagen" [alt]="carta.nombre" style="width: 100%; max-height: 200px; object-fit: contain;" />
+  <ion-card-header>
+    <ion-card-title>{{ carta.nombre | uppercase }}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <p><strong>Tipo:</strong> {{ carta.tipo }}</p>
+    <p><strong>Precio:</strong> {{ carta.precio | currency:'EUR' }}</p>
+  </ion-card-content>
+</ion-card>

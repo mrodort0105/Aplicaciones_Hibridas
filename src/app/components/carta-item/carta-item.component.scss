@@ -1,0 +1,24 @@
+.carta-img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+  padding-top: 12px;
+}
+
+.en-oferta {
+  border: 2px solid var(--ion-color-danger);
+  box-shadow: 0px 4px 12px rgba(235, 68, 90, 0.3);
+}
+
+.precio-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+
+  .precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--ion-color-success);
+  }
+}
