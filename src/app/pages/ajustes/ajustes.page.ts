@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { SettingsService } from '../../services/settings.service';
 import { IonContent, IonHeader, IonTitle, IonToolbar, IonList, IonListHeader, IonItem, IonLabel, IonToggle, IonButtons, IonBackButton } from '@ionic/angular';
 
 @Component({
@@ -7,25 +9,18 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonList, IonListHeader, Io
   styleUrls: ['./ajustes.page.scss'],
   standalone: true,
   imports: [
-    IonContent, IonHeader, IonTitle, IonToolbar,
-    IonList, IonItem, IonLabel, IonToggle, IonButtons, IonBackButton, IonListHeader
-]
+    CommonModule,
+    IonContent, IonHeader, IonTitle, IonToolbar,  
+    IonButtons, IonBackButton,  
+    IonList, IonListHeader, IonItem, IonLabel, IonToggle  
+  ]
 })
 export class AjustesPage {
 
-  // Keep the template-facing API without importing a service that is not present.
-  readonly settingsService = {
-    setDarkMode: (enabled: boolean) => {
-      document.body.classList.toggle('dark', enabled);
-    }
-  };
+  constructor(public settingsService: SettingsService) { }
 
-  // Método que se ejecuta cada vez que el usuario mueve el interruptor (ion-toggle)
   onToggleChange(event: any) {
-    // Obtenemos el nuevo valor booleano (true o false) del evento del componente
     const isChecked = event.detail.checked;
-    
-    // Actualizamos el tema con el nuevo estado
     this.settingsService.setDarkMode(isChecked);
   }
 }

@@ -22,7 +22,7 @@ export class HomePage {
       nombre: 'Charizard GX',
       tipo: 'Fuego',
       precio: 149.99,
-      imagen: 'https://images.pokemontcg.io/sm3/20_hires.png',
+      imagen: 'https://images.scrydex.com/pokemon/smp-SM211/medium',
       rareza: 'Ultra Rara',
       enOferta: true,
       fechaLanzamiento: '2017-08-04'
@@ -32,11 +32,42 @@ export class HomePage {
       nombre: 'Frosmoth',
       tipo: 'Hielo',
       precio: 89.50,
-      imagen: 'https://images.pokemontcg.io/swsh45/30_hires.png',
+      imagen: 'https://images.scrydex.com/pokemon/swsh10tg-TG04/medium',
+      rareza: 'Secret Rare',
+      enOferta: false,
+      fechaLanzamiento: '2020-11-20'
+    },
+    {
+      id: 3,
+      nombre: 'Pikachu VMAX',
+      tipo: 'Eléctrico',
+      precio: 120.99,
+      imagen: 'https://images.scrydex.com/pokemon/swshp-SWSH062/medium',
+      rareza: 'Secret Rare',
+      enOferta: false,
+      fechaLanzamiento: '2020-11-20'
+    },
+    {
+      id: 4,
+      nombre: 'Venasaur',
+      tipo: 'Planta',
+      precio: 89.50,
+      imagen: 'https://images.scrydex.com/pokemon/tcgp-PA-18/medium',
+      rareza: 'Secret Rare',
+      enOferta: false,
+      fechaLanzamiento: '2020-11-20'
+    },
+    {
+      id: 5,
+      nombre: 'Blastoise',
+      tipo: 'Agua',
+      precio: 89.50,
+      imagen: 'https://images.scrydex.com/pokemon/tcgp-PA-29/medium',
       rareza: 'Secret Rare',
       enOferta: false,
       fechaLanzamiento: '2020-11-20'
     }
+
   ];
 
   constructor() {}
